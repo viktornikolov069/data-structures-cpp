@@ -1,0 +1,23 @@
+<type>(<scope>): <short summary>
+
+# Types:
+#   feat      - new feature / data structure
+#   fix       - bug fix
+#   refactor  - code change without behavior change
+#   test      - add or update tests
+#   build     - build system / CMake changes
+#   docs      - documentation only
+#   chore     - repo maintenance, formatting, cleanup
+#
+# Scope (optional):
+#   sequence, trees, hashing, graphs, build, tests, docs
+#
+# Rules:
+# - Use imperative mood: "add", "fix", "refactor"
+# - Keep summary under 72 characters
+# - No period at the end
+#
+# Examples:
+#   feat(sequence): add static_array container
+#   build: add minimal CMakeLists for C++23
+#   refactor(static_array): simplify iterator implementation
