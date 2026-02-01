@@ -2,6 +2,7 @@
 #define DSCPP_DSCPP_HPP
 
 #include <dscpp/sequence.hpp>
+#include <dscpp/algorithms.hpp>
 // Later:
 // #include <dscpp/adapters.hpp>
 // #include <dscpp/trees.hpp>
