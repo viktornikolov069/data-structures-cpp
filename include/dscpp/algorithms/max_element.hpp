@@ -4,24 +4,27 @@
 #include <string>
 #include <expected>
 
-template <typename T>
-constexpr std::expected<typename T::value_type, std::string> max_element(const T &arr) noexcept
+namespace dscpp
 {
-    if (arr.empty())
+    template <typename T>
+    constexpr std::expected<typename T::value_type, std::string> max_element(const T &arr) noexcept
     {
-        return std::unexpected("Array is empty!");
-    }
-    auto greaterElement = arr[0];
-
-    for (size_t i = 1; i < arr.size(); ++i)
-    {
-        if (arr[i] > greaterElement)
+        if (arr.empty())
         {
-            greaterElement = arr[i];
+            return std::unexpected("Array is empty!");
         }
-    }
+        auto greaterElement = arr[0];
 
-    return greaterElement;
+        for (size_t i = 1; i < arr.size(); ++i)
+        {
+            if (arr[i] > greaterElement)
+            {
+                greaterElement = arr[i];
+            }
+        }
+
+        return greaterElement;
+    }
 }
 
 #endif // DSCPP_MAX_ELEMENT_HPP
