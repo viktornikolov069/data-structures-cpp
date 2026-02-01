@@ -1,5 +1,5 @@
-#ifndef DSCPP_SEQUENCE_HPP
-#define DSCPP_SEQUENCE_HPP
+#ifndef DSCPP_ALGORITHMS_HPP
+#define DSCPP_ALGORITHMS_HPP
 
 #include <dscpp/algorithms/max_element.hpp>
 // Later:
@@ -7,4 +7,4 @@
 // #include <dscpp/sequence/singly_linked_list.hpp>
 // #include <dscpp/sequence/doubly_linked_list.hpp>
 
-#endif // DSCPP_SEQUENCE_HPP
+#endif // DSCPP_ALGORITHMS_HPP
