@@ -17,6 +17,14 @@ namespace dscpp
 
         static_array() = default;
 
+        constexpr static_array(Values... values)
+        {
+            static_assert(sizeof...(Values) <= Size, "Too many initializers");
+            static_assert((std::is_constructible_v<Values, T> && ...), "All values must be of type --> T");
+            std::array<T, sizeof...(Values)> temp = {values...};
+            std::copy(temp.begin(), temp.end(), m_elements);
+        }
+
         [[nodiscard]] constexpr size_type size() const noexcept
         {
             return Size;
