@@ -17,6 +17,7 @@ namespace dscpp
 
         static_array() = default;
 
+        template <typename... Values>
         constexpr static_array(Values... values)
         {
             static_assert(sizeof...(Values) <= Size, "Too many initializers");
