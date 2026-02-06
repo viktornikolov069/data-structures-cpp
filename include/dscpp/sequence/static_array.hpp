@@ -2,6 +2,7 @@
 #define DSCPP_STATIC_ARRAY_HPP
 
 #include <cstddef>
+#include <array>
 
 namespace dscpp
 {
